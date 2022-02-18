@@ -47,6 +47,9 @@
                 let curTitle = document.getElementById(row.toString() + '-' + col.toString())
                 curTitle.innerText = "";
             }
+            else if (e.code === "Enter"){
+
+            }
         })
     }
 

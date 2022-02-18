@@ -28,15 +28,6 @@ hr{
     color: black;
     font-weight: bold;
 }
-.sbmtBtn:{
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    border: none;
-    background: darkgray;
-    color: black;
-    font-weight: bold;
-}
 
 #title{
     font-size: 36px;
