@@ -498,12 +498,18 @@ let height = 6,     // number of attempts
             for (let j = 0; j < width; j++){
                 let curTitle = document.getElementById(i.toString() + "-" + j.toString()+ "-front");
                 curTitle.classList.remove('filled');
+                curTitle.classList.remove('correct');
+                curTitle.classList.remove('present');
+                curTitle.classList.remove('absent');
                 curTitle.innerText = "";
             }
         }
         col = 0;
         row = 0;
         gameOver= false;
+        wordIndex = Math.floor(Math.random() * (449 + 1));
+        word = words[wordIndex];
+        console.log(word);
     }
 
     function Listeners(){
