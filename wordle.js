@@ -496,9 +496,9 @@ let height = 6,     // number of attempts
     function restGameBoard(){
         for (let i = 0; i < height; i++){
             for (let j = 0; j < width; j++){
-                let element = document.getElementById(row.toString() + '-' + i.toString() + '-front');
-                element.innerText = " ";
-                element.classList.remove('filled');
+                let curTitle = document.getElementById(i.toString() + "-" + j.toString()+ "-front");
+                curTitle.classList.remove('filled');
+                curTitle.innerText = "";
             }
         }
         col = 0;
@@ -573,17 +573,17 @@ let height = 6,     // number of attempts
     }
 
     function submitAnswer(){
-        let wordForCheck;
+        let wordForCheck = [];
         let noSpace = true;
         for (let i = 0; i < width; i++) {
             let curTitle = document.getElementById(row.toString() + '-' + i.toString() + '-front')
             let letter = curTitle.innerText;
-            word[i] = letter;
+            wordForCheck.push(letter);
             if (letter === "")
                 noSpace= false;
         }
         if (noSpace){
-            if (wordValidator(wordForCheck)){
+            if (wordValidator(wordForCheck.join(""))){
                 updateBoard();
                 row++;
                 col=0;
