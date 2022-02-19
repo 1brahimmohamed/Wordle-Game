@@ -3,12 +3,14 @@ body{
     text-align: center;
 }
 
+/*styling of the line below the title*/
 hr{
     width: 500px;
     margin-top: -20px;
 }
 
-.sbmtBtn{
+/*styling of the buttons */
+.submit-btn{
     width: 150px;
     height: 50px;
     border-radius: 5px;
@@ -19,7 +21,8 @@ hr{
     transition-duration: 0.4s;
 }
 
-.sbmtBtn:hover{
+/*styling of the buttons when hovering over them*/
+.submit-btn:hover{
     width: 150px;
     height: 50px;
     border-radius: 5px;
@@ -28,14 +31,14 @@ hr{
     color: black;
     font-weight: bold;
 }
-
+/* styling of the title of the page */
 #title{
     font-size: 36px;
     font-weight: bold;
     letter-spacing: 2px;
     margin-top: 0px;
 }
-
+/* main game board styling*/
 #board{
     width: 350px;
     height: 420px;
@@ -44,8 +47,8 @@ hr{
     display: flex;
     flex-wrap: wrap;
 }
-
-.title{
+/* styling of the cards of the game*/
+.card{
     /* Box */
     border: 2px solid lightgray;
     width: 60px;
@@ -62,7 +65,8 @@ hr{
     transition:  transform 0.8s;
 }
 
-.filled{
+/* styling of the cards of the game*/
+.card-filled{
     /* Box */
     border: 2px solid black;
     width: 60px;
@@ -78,14 +82,7 @@ hr{
     align-items: center;
 }
 
-.letter{
-    margin: 0;
-    padding: 0;
-    border: 2px solid black;
-}
-
-
-
+/* when the letter is in its correct place*/
 .correct{
     background-color: #6AAA64;
     color: white;
@@ -93,6 +90,7 @@ hr{
     transform: rotateX(180deg);
 }
 
+/*when the letter is present in the word bit not in place*/
 .present{
     background-color: #c9b458;
     color: white;
@@ -100,6 +98,7 @@ hr{
     transform: rotateX(180deg);
 }
 
+/*when the letter is not in the word*/
 .absent{
     background-color: #787C7E;
     color: white;
