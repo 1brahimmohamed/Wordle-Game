@@ -88,6 +88,7 @@ hr{
     color: white;
     border-color: #6AAA64;
     transform: rotateX(180deg);
+    transition:  transform 0.8s;
 }
 
 /*when the letter is present in the word bit not in place*/
